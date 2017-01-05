@@ -44,7 +44,8 @@ public class RogersTycoAdapterEndPoint {
         log.debug("CTN=" + subscriber.getCtn() + "  TransactionId=" + subscriber.getTransactionId());
 
         QuerySubscriberResponse resp = adapterService.getQuerySubscriberResponse(subscriber);
-        return resp;
+         log.debug("Returning response : querySubscriber().........." );
+		return resp;
     }
  
 }
