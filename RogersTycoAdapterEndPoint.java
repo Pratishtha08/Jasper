@@ -45,6 +45,7 @@ public class RogersTycoAdapterEndPoint {
 
         QuerySubscriberResponse resp = adapterService.getQuerySubscriberResponse(subscriber);
         return resp;
+		 log.debug("Finished : querySubscriber().........." );
     }
  
 }
