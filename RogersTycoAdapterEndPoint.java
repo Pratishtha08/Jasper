@@ -41,6 +41,7 @@ public class RogersTycoAdapterEndPoint {
     @ResponsePayload
     public QuerySubscriberResponse querySubscriber(@RequestPayload QuerySubscriber subscriber) throws Exception {
         log.debug("STARTED : querySubscriber().........." );
+		log.debug("Trying out merge");
         log.debug("CTN=" + subscriber.getCtn() + "  TransactionId=" + subscriber.getTransactionId());
 
         QuerySubscriberResponse resp = adapterService.getQuerySubscriberResponse(subscriber);
